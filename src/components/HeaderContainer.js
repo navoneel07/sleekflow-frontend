@@ -44,10 +44,10 @@ const Head = () => (
 );
 
 const MenuBar = () => (
-  <Menu color="blue" inverted>
+  <Menu inverted>
     <Container>
       <Menu.Item as="a" header>
-        <Image size="small" src="" />
+        <Image size="small" src={process.env.PUBLIC_URL + "/logo.svg"} />
       </Menu.Item>
       <Menu.Menu position="right">
         <Menu.Item as="a" name="home">
@@ -69,7 +69,6 @@ class HeaderContainer extends Component {
     return (
       <Segment
         inverted
-        color="blue"
         textAlign="center"
         style={{ minHeight: 700, padding: "1em 0em" }}
         vertical
@@ -79,6 +78,7 @@ class HeaderContainer extends Component {
           <Grid.Column width={10}>
             <Head />
           </Grid.Column>
+          <Grid.Column width={6}></Grid.Column>
         </Grid>
       </Segment>
     );

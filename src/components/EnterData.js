@@ -43,6 +43,13 @@ class FormHolder extends Component {
         vertical
       >
         <Grid>
+          <Grid.Column width={10}>
+            <Container text>
+              <br></br>
+              <Info />
+              <br></br>
+            </Container>
+          </Grid.Column>
           <Grid.Column width={6} verticalAlign="middle">
             <Header
               inverted
@@ -55,15 +62,8 @@ class FormHolder extends Component {
               }}
             />
           </Grid.Column>
-          <Grid.Column width={10}>
-            <Container text>
-              <br></br>
-              <Info />
-              <br></br>
-              <Button>Submit</Button>
-            </Container>
-          </Grid.Column>
         </Grid>
+        <Button>Submit</Button>
       </Segment>
     );
   }
