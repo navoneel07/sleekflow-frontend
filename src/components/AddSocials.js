@@ -61,15 +61,18 @@ class SocialContainer extends Component {
         <Grid divided>
           <Grid.Column width={10}>
             <Container text>
-              <AdressForm name="facebook" color="facebook" place="Facebook" />
-              <AdressForm name="twitter" color="twitter" place="Twitter" />
               <AdressForm name="whatsapp" color="green" place="Whatsapp" />
-              <AdressForm name="linechat" color="green" place="Line" />
               <AdressForm
-                name="snapchat ghost"
-                color="yellow"
-                place="Snapchat"
+                name="facebook messenger"
+                color="facebook"
+                place="Facebook"
               />
+              <AdressForm name="wechat" color="green" place="WeChat" />
+              <AdressForm name="linechat" color="green" place="Line" />
+              <AdressForm name="viber" color="violet" place="Viber" />
+              <AdressForm name="telegram plane" color="blue" place="Telegram" />
+              <AdressForm name="mail" color="yellow" place="Mail" />
+              <AdressForm name="call" color="orange" place="Call" />
             </Container>
           </Grid.Column>
           <Grid.Column width={6} verticalAlign="middle">
